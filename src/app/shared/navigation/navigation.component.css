@@ -1,3 +1,19 @@
 #nav {
-    font-weight: 400;
+    background-color: #0C134F;
+    font-weight: 600;
+}
+
+#nav header .bi.bi-bootstrap-fill {
+    font-size: 2.5rem;
+    color: #FFF;
+}
+
+#nav ul.nav a.nav-link,
+#nav header > div > a:first-child {
+    color: #D4ADFC;
+    text-decoration: none;
+}
+
+#nav header > div > a.btn {
+    font-weight: 600;
 }
