@@ -1,0 +1,29 @@
+<div class="auth-form">
+  <div class="title">Login</div>
+  <form (ngSubmit)="submitForm()">
+    <input
+      [(ngModel)]="email"
+      name="email"
+      placeholder="Email"
+      class="auth-input"
+    />
+    <input
+      [(ngModel)]="password"
+      type="password"
+      name="password"
+      placeholder="Password"
+      class="auth-input"
+    />
+    <div class="d-flex justify-content-center mb-3">
+      <re-captcha
+        (resolved)="onCaptchaResolved($event)"
+        siteKey="6LdZBRQpAAAAABkG5Kc02QcIaxj-m_T5RADEsKjV"
+      ></re-captcha>
+    </div>
+    <button type="submit" class="btn btn-primary submit">Login</button>
+  </form>
+  <a href="#" class="link">Forgot password?</a>
+  <a href="#" class="link signup">
+    Not registered? <span>Create an account</span>
+  </a>
+</div>
