@@ -3,19 +3,21 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { RecaptchaModule } from 'ng-recaptcha';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
+import { AuthInputComponent } from './components/auth-input/auth-input.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AuthInputComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     RecaptchaModule,
-    FormsModule
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }

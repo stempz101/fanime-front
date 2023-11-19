@@ -1,19 +1,15 @@
 <div class="auth-form">
   <div class="title">Login</div>
-  <form (ngSubmit)="submitForm()">
-    <input
-      [(ngModel)]="email"
-      name="email"
+  <form (ngSubmit)="submitForm()" [formGroup]="loginForm">
+    <app-auth-input
       placeholder="Email"
-      class="auth-input"
-    />
-    <input
-      [(ngModel)]="password"
-      type="password"
-      name="password"
+      [control]="loginForm.get('email')"
+    ></app-auth-input>
+    <app-auth-input
+      inputType="password"
       placeholder="Password"
-      class="auth-input"
-    />
+      [control]="loginForm.get('password')"
+    ></app-auth-input>
     <div class="d-flex justify-content-center mb-3">
       <re-captcha
         (resolved)="onCaptchaResolved($event)"

@@ -1,0 +1,17 @@
+.auth-input {
+  background-color: #eedcff;
+  border-radius: 5px;
+  border: 0;
+  color: #38343c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.auth-input:focus {
+  outline: none;
+}
